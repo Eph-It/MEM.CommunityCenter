@@ -1,0 +1,24 @@
+﻿@inherits DevicesBase
+@page "/devices"
+
+
+<h3>Devices</h3>
+
+<MatBlazor.MatSnackbar @bind-IsOpen="@snackBarIsOpen">
+    <MatBlazor.MatSnackbarContent>Loading data... This should go away when data is full loaded!</MatBlazor.MatSnackbarContent>
+
+</MatBlazor.MatSnackbar>
+
+@if (res != null)
+{
+    <MatBlazor.MatTable Items="@res" RowClass="tester" ShowFooter="false" Striped="true" ShowPaging="false" PageSize="@pageSize">
+        <MatTableHeader>
+            <th>Name</th>
+        </MatTableHeader>
+        <MatTableRow>
+            <td>@context.Name</td>
+        </MatTableRow>
+    </MatBlazor.MatTable>
+    <MatBlazor.MatPaginator Length="@pageLength" PageSize="@pageSize" Page="@OnPageAsync"></MatBlazor.MatPaginator>
+
+}
