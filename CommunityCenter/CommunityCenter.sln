@@ -9,9 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommunityCenter.CM.Client",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommunityCenter.UI", "CommunityCenter.UI\CommunityCenter.UI.csproj", "{8FC648E1-8DBF-4A19-AF04-795020331989}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunityCenter.User", "CommunityCenter.User\CommunityCenter.User.csproj", "{1C4C57C1-C05B-44D9-BD7C-EC6758C97BB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommunityCenter.User", "CommunityCenter.User\CommunityCenter.User.csproj", "{1C4C57C1-C05B-44D9-BD7C-EC6758C97BB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunityCenter.CM.DB", "CommunityCenter.CM.DB\CommunityCenter.CM.DB.csproj", "{0A105960-D6CA-461B-9D02-EFDF37166C2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommunityCenter.CM.DB", "CommunityCenter.CM.DB\CommunityCenter.CM.DB.csproj", "{0A105960-D6CA-461B-9D02-EFDF37166C2A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

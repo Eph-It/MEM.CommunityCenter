@@ -24,6 +24,13 @@ namespace CommunityCenter.CM.DB
             return base.Set<T>().FromSqlRaw(queryString, cmUserId);
         }
 
+        public IQueryable<T> GetRBACResults<T>(T fakeObject)
+            where T : class
+        {
+            return GetRBACResults<T>();
+        }
+
+
         public string cmUserId
         {
             get
@@ -33,8 +40,13 @@ namespace CommunityCenter.CM.DB
                     using (var command = base.Database.GetDbConnection().CreateCommand())
                     {
                         var userSids = _user.GetSids();
-                        command.CommandText = $"select dbo.fn_rbac_GetAdminIDsfromUserSIDs('{userSids}') as Result";
+                        command.CommandText = $"select dbo.fn_rbac_GetAdminIDsfromUserSIDs(@userSids) as Result";
                         command.CommandType = CommandType.Text;
+                        var sidParam = command.CreateParameter();
+                        sidParam.ParameterName = "@userSids";
+                        sidParam.DbType = DbType.String;
+                        sidParam.Value = userSids;
+                        command.Parameters.Add(sidParam);
                         base.Database.OpenConnection();
                         using (var result = command.ExecuteReader())
                         {
