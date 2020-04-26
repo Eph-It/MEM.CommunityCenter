@@ -2,7 +2,6 @@
 @using Microsoft.EntityFrameworkCore
 @using CommunityCenter.CM.DB.Models
 @using MatBlazor
-@using Microsoft. 
 @typeparam TItem
 
 @inject AuthenticationStateProvider AuthenticationStateProvider
@@ -26,7 +25,7 @@
             <th>Name</th>
         </MatTableHeader>
         <MatTableRow>
-            <td>@context.Name</td>
+            <td>@context</td>
         </MatTableRow>
     </MatBlazor.MatTable>
     <MatBlazor.MatPaginator Length="@pageLength" PageSize="@pageSize" Page="@OnPageAsync"></MatBlazor.MatPaginator>
@@ -45,14 +44,14 @@
     protected override async Task OnInitializedAsync()
     {
         pageLength = dbContext.GetRBACResults<TItem>().Count();
-        res = await dbContext.GetRBACResults<TItem>().OrderBy("MachineID").Take(pageSize).ToArrayAsync();
+// res = await dbContext.GetRBACResults<TItem>().OrderBy("MachineID").Take(pageSize).ToArrayAsync();
         snackBarIsOpen = false;
     }
     protected async Task OnPageAsync(MatPaginatorPageEvent e)
     {
         snackBarIsOpen = true;
         pageSize = e.PageSize;
-        res = await dbContext.GetRBACResults<TItem>().OrderBy(p => p.MachineID).Skip(e.PageSize * e.PageIndex).Take(pageSize).ToArrayAsync();
+        //res = await dbContext.GetRBACResults<TItem>().OrderBy(p => p.MachineID).Skip(e.PageSize * e.PageIndex).Take(pageSize).ToArrayAsync();
         snackBarIsOpen = false;
     }
     void SortData(MatSortChangedEvent sort)
