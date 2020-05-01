@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Components.Authorization;
 using System.Security.Claims;
 using CommunityCenter.CM.DB;
 using Microsoft.EntityFrameworkCore;
-using CommunityCenter.CM.DB.Models;
+using CommunityCenter.Models.RBAC;
 
 namespace CommunityCenter.UI.Pages
 {

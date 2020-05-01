@@ -516,7 +516,6 @@ namespace CommunityCenter.CM.DB
         public DbSet<fn_rbac_GS_DEVICE_INSTALLEDAPPLICATIONS> fn_rbac_GS_DEVICE_INSTALLEDAPPLICATIONS { get; set; }
         public DbSet<fn_rbac_CM_RES_COLL_SMS000US> fn_rbac_CM_RES_COLL_SMS000US { get; set; }
         public DbSet<fn_rbac_CIComplianceSummary> fn_rbac_CIComplianceSummary { get; set; }
-        public DbSet<fn_rbac_CM_RES_COLL_PS100014> fn_rbac_CM_RES_COLL_PS100014 { get; set; }
         public DbSet<fn_rbac_GS_RAX_APPLICATION> fn_rbac_GS_RAX_APPLICATION { get; set; }
         public DbSet<fn_rbac_Collection> fn_rbac_Collection { get; set; }
         public DbSet<fn_rbac_HS_DEVICE_INSTALLEDAPPLICATIONS> fn_rbac_HS_DEVICE_INSTALLEDAPPLICATIONS { get; set; }
@@ -1115,7 +1114,6 @@ namespace CommunityCenter.CM.DB
             modelBuilder.Entity<fn_rbac_GS_DEVICE_INSTALLEDAPPLICATIONS>(eb => {eb.HasNoKey();});
             modelBuilder.Entity<fn_rbac_CM_RES_COLL_SMS000US>(eb => {eb.HasNoKey();});
             modelBuilder.Entity<fn_rbac_CIComplianceSummary>(eb => {eb.HasNoKey();});
-            modelBuilder.Entity<fn_rbac_CM_RES_COLL_PS100014>(eb => {eb.HasNoKey();});
             modelBuilder.Entity<fn_rbac_GS_RAX_APPLICATION>(eb => {eb.HasNoKey();});
             modelBuilder.Entity<fn_rbac_Collection>(eb => {eb.HasNoKey();});
             modelBuilder.Entity<fn_rbac_HS_DEVICE_INSTALLEDAPPLICATIONS>(eb => {eb.HasNoKey();});
