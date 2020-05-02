@@ -13,11 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommunityCenter.User", "Com
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommunityCenter.CM.DB", "CommunityCenter.CM.DB\CommunityCenter.CM.DB.csproj", "{0A105960-D6CA-461B-9D02-EFDF37166C2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunityCenter.WebAPI.Server", "CommunityCenter.WebAPI\Server\CommunityCenter.WebAPI.Server.csproj", "{DF372DCB-9212-434B-882D-51FA0CA2AE01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommunityCenter.WebAPI.Server", "CommunityCenter.WebAPI\Server\CommunityCenter.WebAPI.Server.csproj", "{DF372DCB-9212-434B-882D-51FA0CA2AE01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunityCenter.WebAPI.Client", "CommunityCenter.WebAPI\Client\CommunityCenter.WebAPI.Client.csproj", "{F578D6DA-C945-46A1-AD4F-434FB8968BD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommunityCenter.WebAPI.Client", "CommunityCenter.WebAPI\Client\CommunityCenter.WebAPI.Client.csproj", "{F578D6DA-C945-46A1-AD4F-434FB8968BD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunityCenter.WebAPI.Shared", "CommunityCenter.WebAPI\Shared\CommunityCenter.WebAPI.Shared.csproj", "{7812DA5B-01B2-4186-B16B-5F87AAF3CBCB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommunityCenter.WebAPI.Shared", "CommunityCenter.WebAPI\Shared\CommunityCenter.WebAPI.Shared.csproj", "{7812DA5B-01B2-4186-B16B-5F87AAF3CBCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunityCenter.SQL", "CommunityCenter.SQL\CommunityCenter.SQL.csproj", "{2D4479E1-39F9-4C64-9BC8-151B64BE5E6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{7812DA5B-01B2-4186-B16B-5F87AAF3CBCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7812DA5B-01B2-4186-B16B-5F87AAF3CBCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7812DA5B-01B2-4186-B16B-5F87AAF3CBCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D4479E1-39F9-4C64-9BC8-151B64BE5E6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D4479E1-39F9-4C64-9BC8-151B64BE5E6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D4479E1-39F9-4C64-9BC8-151B64BE5E6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D4479E1-39F9-4C64-9BC8-151B64BE5E6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
