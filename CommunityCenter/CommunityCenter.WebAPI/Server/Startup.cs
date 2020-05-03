@@ -1,4 +1,5 @@
 using CommunityCenter.CM.DB;
+using CommunityCenter.SQL;
 using CommunityCenter.User;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -33,6 +34,7 @@ namespace CommunityCenter.WebAPI.Server
             {
                 services.AddScoped<ICCUser, IISUser>();
             }
+            services.AddScoped<ICCSql>(p => new CCSql(Configuration.GetConnectionString("MEMCMDB")));
             services.AddDbContext<CMDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("MEMCMDB")));
             services.AddResponseCompression(opts =>
             {

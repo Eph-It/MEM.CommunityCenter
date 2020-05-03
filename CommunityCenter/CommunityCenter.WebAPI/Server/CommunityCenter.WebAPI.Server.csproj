@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\CommunityCenter.CM.DB\CommunityCenter.CM.DB.csproj" />
+    <ProjectReference Include="..\..\CommunityCenter.SQL\CommunityCenter.SQL.csproj" />
     <ProjectReference Include="..\..\CommunityCenter.User\CommunityCenter.User.csproj" />
     <ProjectReference Include="..\Client\CommunityCenter.WebAPI.Client.csproj" />
     <ProjectReference Include="..\Shared\CommunityCenter.WebAPI.Shared.csproj" />
